@@ -1,68 +1,71 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: lightFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-Light.ttf);
+  font-display: swap;
 }
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+@font-face {
+  font-family: lightItalic;
+  src: url(./assets/fonts/Poppins-1/Poppins-LightItalic.ttf);
+  font-display: swap;
 }
-a:hover {
-  color: #535bf2;
+@font-face {
+  font-family: RegularFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-Regular.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: MediumFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-Medium.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: MediumItalic;
+  src: url(./assets/fonts/Poppins-1/Poppins-MediumItalic.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: boldFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-Bold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: boldItalic;
+  src: url(./assets/fonts/Poppins-1/Poppins-BoldItalic.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: SemiBoldFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-SemiBold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: SemoBoldItalic;
+  src: url(./assets/fonts/Poppins-1/Poppins-SemiBoldItalic.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: ExtraBoldFont;
+  src: url(./assets/fonts/Poppins-1/Poppins-ExtraBold.ttf);
+  font-display: swap;
+}
+@font-face {
+  font-family: ExtraBoldItalic;
+  src: url(./assets/fonts/Poppins-1/Poppins-ExtraBoldItalic.ttf);
+  font-display: swap;
 }
 
 body {
+  font-family: RegularFont;
+  font-size: 1rem;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+*{
+  margin: 0;
+  padding: 0;
 }
