@@ -12,9 +12,9 @@ function Work() {
   const myWork = [
     {
       name: "AGENCY BANKING",
-      desc: "Agency Banking platform is an all-inclusive agency banking solution with robust tools for efficient agent and liquidity management. Agency Banking Platform is designed to assist financial institutions drive financial inclusion, scale customer acquisition, grow revenue and boost profitability.",
+      desc: "Agency Banking platform is is a super functioning admin interface that consist 8 roles including superagent and staff, it is use to onboard agents and assigning terminals to agent, also onbaording of agent manger to manage various agents under them. it is also show and display terminal current locations through google maps api, commisson on various services such as withdrawal,airtime,data,electricity,and other vas collections.",
       image: Agency,
-      link: "https://agencybanking.tm30.net/",
+      link: "https://hopesuperagent.tm30.net",
     },
     {
       name: "TMSaaS",
