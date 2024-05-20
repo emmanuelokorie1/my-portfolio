@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-scroll";
 
 function Landing() {
   return (
@@ -9,17 +10,19 @@ function Landing() {
         <div className="text-[9rem] p-0 m-0 hi">Hi! I’m </div>{" "}
         <div className="Okorie text-[9rem] p-0 m-0 relative">
           <div className="Emmanuel">Emmanuel</div>
-          <div className="text-[1rem] bg-secondary2 Emmzzy  text-white w-fit">
+          {/* <div className="text-[1rem] bg-secondary2 Emmzzy  text-white w-fit">
             A.KA Emmzzy Vibes
-          </div>
+          </div> */}
         </div>
         <div className="text-[1.3rem] Welcome text-gray-600">
-          Welcome to my online space. Your Friendly Frontend Developer
+          Welcome to my online space. Your Friendly <span className="">Frontend Developer</span>
         </div>
       </aside>
 
-      <div className=" absolute bottom-[5%] text-gray-500 arrow-container">
-        <IoIosArrowDown size={30} />
+      <div className=" absolute bottom-[5%] text-gray-500 arrow-container cursor-pointer">
+        <Link to="work" smooth={true} duration={700}>
+          <IoIosArrowDown size={30} />
+        </Link>
       </div>
     </Container>
   );
