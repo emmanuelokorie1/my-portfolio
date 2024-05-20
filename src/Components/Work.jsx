@@ -12,7 +12,7 @@ function Work() {
   const myWork = [
     {
       name: "AGENCY BANKING",
-      desc: "Agency Banking platform is is a super functioning admin interface that consist 8 roles including superagent and staff, it is use to onboard agents and assigning terminals to agent, also onbaording of agent manger to manage various agents under them. it is also show and display terminal current locations through google maps api, commisson on various services such as withdrawal,airtime,data,electricity,and other vas collections.",
+      desc: "Agency Banking platform is is a super functioning admin interface that consist 8 roles including superagent and staff, it is use to onboard agents and assigning terminals to agent, also onbaording of agent manger to manage various agents under them. it is also show and display terminal current locations through google maps api, commisson on various services such as withdrawal, airtime, data, electricity, and other vas collections.",
       image: Agency,
       link: "https://hopesuperagent.tm30.net",
     },
@@ -62,9 +62,9 @@ function Work() {
 
   return (
     <section>
-      <div className="flex items-center justify-evenly mb-[3rem]">
-        <div className=" w-[30%] text-[4rem]">Lastest Work</div>
-        <div className=" w-[50%] border-b-[1px] border-colorText border-solid"></div>
+      <div className="s1000:flex items-center justify-evenly mb-[3rem] s1000:px-0 px-[2rem]">
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem]">Lastest Work</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-colorText border-solid"></div>
       </div>
 
       <section>
@@ -72,9 +72,9 @@ function Work() {
           {myWork.slice(0, visibleWorks).map((e, i) => (
             <div
               key={i}
-              className="flex justify-between py-[4rem] px-[6rem] group"
+              className="s1000:flex block justify-between md:py-[4rem] py-[2rem] md:px-[6rem] sm:px-[2rem] px-[1rem] group"
             >
-              <aside className="w-[40%] pe-[4rem]">
+              <aside className="s1000:w-[40%] w-[100%] s1000:pe-[4rem]">
                 <div
                   className="text-[2.3rem] group-hover:text-secondary2 transition-colors duration-300"
                   style={{ fontFamily: "SemiBoldFont" }}
@@ -93,7 +93,7 @@ function Work() {
                   Visit Link <HiOutlineArrowUpRight size={20} />
                 </a>
               </aside>
-              <aside className="w-[60%] flex justify-end">
+              <aside className="s1000:w-[60%] w-[100%] mt-[4rem] s1000:mt-0 flex justify-end">
                 <img src={e?.image} alt="" />
               </aside>
             </div>

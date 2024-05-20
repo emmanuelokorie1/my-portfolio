@@ -6,9 +6,9 @@ import { Link } from "react-scroll";
 function Landing() {
   return (
     <Container>
-      <aside className="p-0 m-0">
-        <div className="text-[9rem] p-0 m-0 hi">Hi! I’m </div>{" "}
-        <div className="Okorie text-[9rem] p-0 m-0 relative">
+      <aside className="p-0 m-0 px-[1rem]">
+        <div className="md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 hi">Hi! I’m </div>{" "}
+        <div className="Okorie md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 ">
           <div className="Emmanuel">Emmanuel</div>
           {/* <div className="text-[1rem] bg-secondary2 Emmzzy  text-white w-fit">
             A.KA Emmzzy Vibes

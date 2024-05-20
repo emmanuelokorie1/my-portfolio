@@ -45,15 +45,15 @@ function About() {
   ];
 
   return (
-    <div className="bg-[#1F2D31] my-[2rem] mx-[2rem] p-[2rem] rounded-[2rem]">
-      <div className="flex items-center justify-evenly ">
-        <div className=" w-[30%] text-[4rem] text-background">About</div>
-        <div className=" w-[50%] border-b-[1px] border-background border-solid"></div>
+    <div className="bg-[#1F2D31] md:m-[2rem] m-[1rem] md:p-[2rem] rounded-[2rem] p-[1rem]">
+      <div className="s1000:flex items-center justify-evenly md:mb-[3rem] sm:mb-[2rem] mb-[1rem] s1000:px-0 px-[1rem]">
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background">About</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid"></div>
       </div>
 
       <section>
-        <aside className=" py-[3rem] px-[5rem] text-background">
-          <div className="w-[65%] text-[2.3rem]">
+        <aside className=" md:py-[3rem] py-[1rem] px-[1rem] md:px-[5rem] text-background">
+          <div className="s1100:w-[65%] md:text-[2.3rem] sm:text-[2rem] text-[1.3rem]">
             {" "}
             As a <span className="text-secondary2">
               Frontend Developer
@@ -68,18 +68,23 @@ function About() {
       </section>
 
       <section className="mt-[3rem]">
-        <div className="flex items-center justify-evenly ">
-          <div className=" w-[30%] text-[4rem] text-background">
+        {/* <div className="flex items-center justify-evenly ">
+          <div className=" w-[30%] md:text-[4rem] text-[2rem] text-background">
             Capabilities
           </div>
           <div className=" w-[50%] border-b-[1px] border-background border-solid"></div>
-        </div>
+        </div> */}
 
-        <div className=" m-[5rem]">
+        <div className="s1000:flex items-center justify-evenly md:mb-[3rem] sm:mb-[2rem] mb-[1rem] s1000:px-0 px-[1rem]">
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background">Capabilities</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid"></div>
+      </div>
+
+        <div className=" md:m-[5rem] sm:m-[2rem] m-[1rem]">
           {basic?.map((e, i) => (
             <div key={i} className="text-background py-[2rem]">
-              <div className="text-end">~ {e?.name}</div>
-              <div className="grid grid-cols-4 ">
+              <div className="text-end ">~ {e?.name}</div>
+              <div className="grid s1000:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 {e?.dx?.map((item) => (
                   <div className=" flex justify-center items-center flex-col">
                     <div className="w-[100px] h-[100px]">

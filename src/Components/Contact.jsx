@@ -23,22 +23,29 @@ function Contact() {
   ];
   return (
     <Container>
-      <div className="text-[6rem] p-0 m-0 hi">Hit me up for</div>{" "}
-      <div className="Okorie text-[6rem] p-0 m-0 relative">
+      <div className="md:text-[6rem] sm:text-[4rem] text-[2.7rem] p-0 m-0 hi">
+        Hit me up for
+      </div>{" "}
+      <div className="Okorie md:text-[6rem] sm:text-[4rem] text-[2.7rem] p-[1rem] m-0 relative">
         <div className="Emmanuel">Future Project.</div>
       </div>
       <a
         href="mailto:emmzzyvibes@gmail.com"
-        className="text-[2rem] border-b-[1px] border-gray-700 border-solid cursor-pointer"
+        className="sm:text-[2rem] text-[1.3rem] border-b-[1px] border-gray-700 border-solid cursor-pointer"
       >
         emmzzyvibes@gmail.com
       </a>
-      <div className="text-[2rem] pt-[1rem]"> +234 708 484 4214</div>
+      <div className="sm:text-[2rem] text-[1.3rem] pt-[1rem]"> +234 708 484 4214</div>
       <div className="flex items-center gap-[2rem] mt-[2rem]">
         {Socials?.map((e, i) => {
           return (
             <div key={i}>
-              <a href={e?.link} target="_blank" rel="noopener noreferrer" className="hover:text-secondary2 transition-colors duration-300">
+              <a
+                href={e?.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-secondary2 transition-colors duration-300"
+              >
                 {e?.icon}
               </a>
             </div>

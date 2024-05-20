@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import { SlCloudDownload } from "react-icons/sl";
 import cd from '../assets/images/cv.pdf'
+import { BiMenuAltRight } from "react-icons/bi";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,7 +48,7 @@ function Header() {
           EV.
         </Link>
       </aside>
-      <aside className="flex w-[60%] gap-[5rem]">
+      <aside className="s1000:flex hidden w-[60%] gap-[5rem]">
         <Link to="work" smooth={true} duration={1000} activeClass="active">
           Work
         </Link>
@@ -58,11 +59,12 @@ function Header() {
           Contact
         </Link>
       </aside>
-      <aside className="w-[20%] text-center">
+      <aside className="w-[20%] s1000:block hidden text-center">
         <button onClick={handleDownloadClick} className="flex items-center gap-4 border-solid border-textSecondary border-[1px] px-[1.2rem] py-[.4rem] rounded-[4rem] cursor-pointer">
           <SlCloudDownload size={25} /> Download Resume
         </button>
       </aside>
+      <div className="s1000:hidden flex "><BiMenuAltRight size={45} /></div>
     </Container>
   );
 }
