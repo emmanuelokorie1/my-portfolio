@@ -2,11 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import { SiInstagram } from "react-icons/si";
 import { CiLinkedin } from "react-icons/ci";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaWhatsapp, FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 
 function Contact() {
   const Socials = [
+    {
+      icon: <FaWhatsapp size={50} />,
+      link: "https://wa.me/7084844214",
+    },
     {
       icon: <CiLinkedin size={50} />,
       link: "www.linkedin.com/in/okorie-emmanuel-a09595240",

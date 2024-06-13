@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import { SlCloudDownload } from "react-icons/sl";
-import cd from '../assets/images/cv.pdf'
+import cd from "../assets/images/cv.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showSideBar, setshowSideBar] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +44,10 @@ function Header() {
         isScrolled ? "scrolled" : "scrolledNo"
       }`}
     >
-      <aside className="w-[20%] text-[1.5rem] font-bold" style={{fontFamily: 'ExtraBoldFont'}}>
+      <aside
+        className="w-[20%] text-[1.5rem] font-bold"
+        style={{ fontFamily: "ExtraBoldFont" }}
+      >
         <Link to="home" smooth={true} duration={1000} activeClass="active">
           EV.
         </Link>
@@ -60,11 +64,28 @@ function Header() {
         </Link>
       </aside>
       <aside className="w-[20%] s1000:block hidden text-center">
-        <button onClick={handleDownloadClick} className="flex items-center gap-4 border-solid border-textSecondary border-[1px] px-[1.2rem] py-[.4rem] rounded-[4rem] cursor-pointer">
+        <button
+          onClick={handleDownloadClick}
+          className="flex items-center gap-4 border-solid border-textSecondary border-[1px] px-[1.2rem] py-[.4rem] rounded-[4rem] cursor-pointer"
+        >
           <SlCloudDownload size={25} /> Download Resume
         </button>
       </aside>
-      <div className="s1000:hidden flex "><BiMenuAltRight size={45} /></div>
+      <div className="s1000:hidden flex " onClick={() => setshowSideBar(true)}>
+        <BiMenuAltRight size={45} />
+      </div>
+
+      {showSideBar && (
+        <div
+          onClick={() => setshowSideBar(false)}
+          className="fixed bg-[red] top-0 left-0 h-full"
+        >
+          hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          culpa aliquam atque illum ratione porro a harum obcaecati libero ab,
+          exercitationem veritatis aut ipsum ipsa, vero cupiditate. Autem,
+          similique corrupti?
+        </div>
+      )}
     </Container>
   );
 }
