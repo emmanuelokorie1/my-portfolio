@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { SlCloudDownload } from "react-icons/sl";
 import cd from "../assets/images/myLatestCV.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
+import { LiaTimesSolid } from "react-icons/lia";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,9 +39,16 @@ function Header() {
     anchor.click();
   };
 
+  const SmallScreenSideBar = [
+    { name: "Home", to: "home" },
+    { name: "Work", to: "work" },
+    { name: "About", to: "about" },
+    { name: "Contact", to: "contact" },
+  ];
+
   return (
     <Container
-      className={`flex fixed w-[100%] justify-between px-[3rem] py-[1.3rem] z-20 ${
+      className={`flex fixed w-[100%] justify-between sm:px-[3rem] px-[1rem] py-[1.3rem] z-20 ${
         isScrolled ? "scrolled" : "scrolledNo"
       }`}
     >
@@ -71,19 +79,49 @@ function Header() {
           <SlCloudDownload size={25} /> Download Resume
         </button>
       </aside>
-      <div className="s1000:hidden flex " onClick={() => setshowSideBar(true)}>
+      <div
+        className="s1000:hidden flex cursor-pointer "
+        onClick={() => setshowSideBar(true)}
+      >
         <BiMenuAltRight size={45} />
       </div>
 
       {showSideBar && (
         <div
           onClick={() => setshowSideBar(false)}
-          className="fixed bg-[red] top-0 left-0 h-full"
+          className="fixed bg-[white] top-0 left-0 h-full w-[100%] p-[1.2rem]"
         >
-          hello Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-          culpa aliquam atque illum ratione porro a harum obcaecati libero ab,
-          exercitationem veritatis aut ipsum ipsa, vero cupiditate. Autem,
-          similique corrupti?
+          <div className="flex justify-end">
+            <LiaTimesSolid size={40} />
+          </div>
+          {SmallScreenSideBar?.map((e, i) => {
+            return (
+              <aside
+                className="text-[1.2rem] mt-[5rem]"
+                style={{ fontFamily: "ExtraBoldFont", fontWeight: '600' }}
+                key={i}
+              >
+                <Link
+                  to={e?.to}
+                  smooth={true}
+                  duration={1000}
+                  activeClass="active"
+                  onClick={() => setshowSideBar(false)}
+                >
+                  {e?.name}
+                </Link>
+              </aside>
+            );
+          })}
+
+          <aside className="absolute bottom-[2rem]">
+            <button
+              onClick={handleDownloadClick}
+              className="flex items-center gap-4 border-solid border-textSecondary border-[1px] px-[1.2rem] py-[.4rem] w-[100%] rounded-[4rem] cursor-pointer"
+            >
+              <SlCloudDownload size={25} /> Download Resume
+            </button>
+          </aside>
         </div>
       )}
     </Container>
