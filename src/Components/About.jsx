@@ -3,6 +3,7 @@ import Js from "../assets/images/lang/js.png";
 import Html from "../assets/images/lang/html.png";
 import CSS from "../assets/images/lang/css.svg";
 import redux from "../assets/images/lang/redux.svg";
+import Next from "../assets/images/lang/nextLogo.svg";
 import react from "../assets/images/lang/react.png";
 import vue from "../assets/images/lang/vue.png";
 import tailwind from "../assets/images/lang/tailwind.png";
@@ -26,6 +27,7 @@ function About() {
         { name: "React", img: react },
         { name: "Vue", img: vue },
         { name: "Angular", img: angular },
+        { name: "Next.js (React)", img: Next },
       ],
     },
     {

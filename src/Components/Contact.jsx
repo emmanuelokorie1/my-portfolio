@@ -35,11 +35,11 @@ function Contact() {
       </div>
       <a
         href="mailto:emmzzyvibes@gmail.com"
-        className="sm:text-[2rem] text-[1.3rem] border-b-[1px] border-gray-700 border-solid cursor-pointer"
+        className="sm:text-[2rem] text-[1.3rem] border-b-[1px] border-gray-700 border-solid cursor-pointer hover:text-secondary2 transition-colors duration-300"
       >
         emmzzyvibes@gmail.com
       </a>
-      <div className="sm:text-[2rem] text-[1.3rem] pt-[1rem]"> +234 708 484 4214</div>
+      <div className="sm:text-[2rem] text-[1.3rem] pt-[1rem] hover:text-secondary2 transition-colors duration-300" > <a href="tel:+234 708 484 4214">+234 708 484 4214</a></div>
       <div className="flex items-center gap-[2rem] mt-[2rem]">
         {Socials?.map((e, i) => {
           return (

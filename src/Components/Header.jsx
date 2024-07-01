@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import { SlCloudDownload } from "react-icons/sl";
-import cd from "../assets/images/cv.pdf";
+import cd from "../assets/images/myLatestCV.pdf";
 import { BiMenuAltRight } from "react-icons/bi";
 
 function Header() {
