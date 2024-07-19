@@ -89,7 +89,10 @@ function Header() {
       {showSideBar && (
         <div
           onClick={() => setshowSideBar(false)}
-          className="fixed bg-[white] top-0 left-0 h-full w-[100%] p-[1.2rem]"
+          className="fixed bg-[#fcfbfa] top-0 left-0 h-full w-[100%] p-[1.2rem]"
+          data-aos="fade-left"
+          data-aos-easing="linear"
+          data-aos-duration="800"
         >
           <div className="flex justify-end">
             <LiaTimesSolid size={40} />
@@ -98,7 +101,7 @@ function Header() {
             return (
               <aside
                 className="text-[1.2rem] mt-[5rem]"
-                style={{ fontFamily: "ExtraBoldFont", fontWeight: '600' }}
+                style={{ fontFamily: "ExtraBoldFont", fontWeight: "600" }}
                 key={i}
               >
                 <Link
