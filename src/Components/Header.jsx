@@ -56,18 +56,43 @@ function Header() {
         className="w-[20%] text-[1.5rem] font-bold"
         style={{ fontFamily: "ExtraBoldFont" }}
       >
-        <Link to="home" smooth={true} duration={1000} activeClass="active">
+        <Link
+          to="home"
+          className={isScrolled && "text-secondary2"}
+          style={{ fontFamily: "boldFont" }}
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+        >
           EV.
         </Link>
       </aside>
       <aside className="s1000:flex hidden w-[60%] gap-[5rem]">
-        <Link to="work" smooth={true} duration={1000} activeClass="active">
+        <Link
+          to="work"
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+          style={{ fontFamily: "SemiBoldFont" }}
+        >
           Work
         </Link>
-        <Link to="about" smooth={true} duration={1000} activeClass="active">
+        <Link
+          to="about"
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+          style={{ fontFamily: "SemiBoldFont" }}
+        >
           About
         </Link>
-        <Link to="contact" smooth={true} duration={1000} activeClass="active">
+        <Link
+          to="contact"
+          smooth={true}
+          duration={1000}
+          activeClass="active"
+          style={{ fontFamily: "SemiBoldFont" }}
+        >
           Contact
         </Link>
       </aside>
@@ -91,8 +116,7 @@ function Header() {
           onClick={() => setshowSideBar(false)}
           className="fixed bg-[#fcfbfa] top-0 left-0 h-full w-[100%] p-[1.2rem]"
           data-aos="fade-left"
-          data-aos-easing="linear"
-          data-aos-duration="800"
+          data-aos-duration="500"
         >
           <div className="flex justify-end">
             <LiaTimesSolid size={40} />
@@ -101,7 +125,7 @@ function Header() {
             return (
               <aside
                 className="text-[1.2rem] mt-[5rem]"
-                style={{ fontFamily: "ExtraBoldFont", fontWeight: "600" }}
+                
                 key={i}
               >
                 <Link
@@ -109,6 +133,8 @@ function Header() {
                   smooth={true}
                   duration={1000}
                   activeClass="active"
+                  style={{ fontFamily: "SemiBoldFont" }}
+                  className="text-gray-600"
                   onClick={() => setshowSideBar(false)}
                 >
                   {e?.name}
@@ -141,7 +167,7 @@ const Container = styled.section`
     transition: background-color 0.3s ease;
   }
   &.scrolledNo {
-    background-color: #fcfbfa;
+    background-color: transparent;
     transition: background-color 0.3s ease;
   }
 

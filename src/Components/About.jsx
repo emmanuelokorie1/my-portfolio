@@ -49,12 +49,12 @@ function About() {
   return (
     <div className="bg-[#1F2D31] md:m-[2rem] m-[1rem] md:p-[2rem] rounded-[2rem] p-[1rem]">
       <div className="s1000:flex items-center justify-evenly md:mb-[3rem] sm:mb-[2rem] mb-[1rem] s1000:px-0 px-[1rem]">
-        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background">About</div>
-        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid"></div>
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background" data-aos="fade-right">About</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid" data-aos="fade-left"></div>
       </div>
 
       <section>
-        <aside className=" md:py-[3rem] py-[1rem] px-[1rem] md:px-[5rem] text-background">
+        <aside className=" md:py-[3rem] py-[1rem] px-[1rem] md:px-[5rem] text-background" data-aos="fade-right" data-aos-delay="300">
           <div className="s1100:w-[65%] md:text-[2.3rem] sm:text-[2rem] text-[1.3rem]">
             {" "}
             As a <span className="text-secondary2">
@@ -78,8 +78,8 @@ function About() {
         </div> */}
 
         <div className="s1000:flex items-center justify-evenly md:mb-[3rem] sm:mb-[2rem] mb-[1rem] s1000:px-0 px-[1rem]">
-        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background">Capabilities</div>
-        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid"></div>
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem] text-background" data-aos="fade-right">Capabilities</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-background border-solid" data-aos="fade-left"></div>
       </div>
 
         <div className=" md:m-[5rem] sm:m-[2rem] m-[1rem]">

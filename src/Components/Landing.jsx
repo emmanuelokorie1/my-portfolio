@@ -6,16 +6,57 @@ import { Link } from "react-scroll";
 function Landing() {
   return (
     <Container>
+      <div className="absolute bottom-[10%] left-[3%] h-[40%] rounded-[10rem] w-[30%] blur-3xl opacity-10  bg-yellow-500"></div>
+      <div className="absolute top-[10%] right-[3%] h-[40%] rounded-[10rem] w-[30%] blur-3xl opacity-10  bg-orange-500"></div>
+      {/* <div className="absolute top-[20%] right-[10%] h-[40%] w-[40%] bg-black">hello</div> */}
       <aside className="p-0 m-0 px-[1rem]">
-        <div className="md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 hi">Hi! I’m </div>{" "}
-        <div className="Okorie md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 ">
+        <div
+          className="md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 hi"
+          data-aos="zoom-in-down"
+          data-aos-delay="100"
+          data-aos-duration="1000"
+        >
+          Hi! I’m{" "}
+        </div>{" "}
+        <div
+          className="Okorie md:text-[7rem] s1000:text-[9rem] sm:text-[5rem] text-[3.5rem] p-0 m-0 "
+          data-aos="fade-down"
+          data-aos-delay="650"
+          data-aos-duration="1000"
+        >
           <div className="Emmanuel">Emmanuel</div>
           {/* <div className="text-[1rem] bg-secondary2 Emmzzy  text-white w-fit">
             A.KA Emmzzy Vibes
           </div> */}
         </div>
-        <div className="text-[1.3rem] Welcome text-gray-600">
-          Welcome to my online space. Your Friendly <span className="">Frontend Developer</span>
+        <div className="sm:text-[1.5rem] text-[1.2rem] Welcome text-gray-600">
+          <div className="s450:flex justify-center gap-1">
+            <div
+              data-aos="fade-right"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Welcome to my online space
+            </div>
+            <span className="text-secondary2 s450:flex hidden">.</span>{"  "}
+            <div
+              data-aos="fade-left"
+              data-aos-delay="900"
+              data-aos-duration="1000"
+            >
+              Your Friendly
+            </div>
+          </div>
+          <div
+            className="text-gray-600 s450:flex justify-center gap-2 mt-[1rem] s450:mt-0 "
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+
+          >
+            <div className="text-secondary2">Frontend Developer</div> <span className=" s450:flex hidden">|</span>{"  "}
+            <div className="text-secondary2">Mobile Developer</div>
+          </div>
         </div>
       </aside>
 

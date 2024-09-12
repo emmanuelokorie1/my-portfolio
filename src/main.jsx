@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 // Initialize AOS with global settings
 AOS.init({
   offset: 200, // Change offset to trigger animations earlier or later (in pixels)
-  duration: 1200, // Duration of animation in milliseconds
+  duration: 600, // Duration of animation in milliseconds
   easing: "ease", // Easing function for the animation
   once: false, // Whether animations should only happen once
   mirror: true, // Whether elements should animate when they enter or leave the viewport

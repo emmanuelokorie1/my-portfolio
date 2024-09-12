@@ -63,8 +63,8 @@ function Work() {
   return (
     <section>
       <div className="s1000:flex items-center justify-evenly mb-[3rem] s1000:px-0 px-[2rem]">
-        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem]">Lastest Work</div>
-        <div className=" s1000:w-[50%] border-b-[1px] border-colorText border-solid"></div>
+        <div className=" s1000:w-[30%] md:text-[4rem] text-[3rem]" data-aos="fade-right">Lastest Work</div>
+        <div className=" s1000:w-[50%] border-b-[1px] border-colorText border-solid" data-aos="fade-left"></div>
       </div>
 
       <section>
@@ -74,7 +74,7 @@ function Work() {
               key={i}
               className="s1000:flex block justify-between md:py-[4rem] py-[2rem] md:px-[6rem] sm:px-[2rem] px-[1rem] group"
             >
-              <aside className="s1000:w-[40%] w-[100%] s1000:pe-[4rem]">
+              <aside className="s1000:w-[40%] w-[100%] s1000:pe-[4rem]" data-aos="fade-right">
                 <div
                   className="text-[2.3rem] group-hover:text-secondary2 transition-colors duration-300"
                   style={{ fontFamily: "SemiBoldFont" }}
@@ -93,7 +93,7 @@ function Work() {
                   Visit Link <HiOutlineArrowUpRight size={20} />
                 </a>
               </aside>
-              <aside className="s1000:w-[60%] w-[100%] mt-[4rem] s1000:mt-0 flex justify-end">
+              <aside className="s1000:w-[60%] w-[100%] mt-[4rem] s1000:mt-0 flex justify-end" data-aos="fade-up">
                 <img src={e?.image} alt="" />
               </aside>
             </div>
