@@ -5,6 +5,7 @@ import seap from "../assets/images/works/seap.png";
 import hqtec from "../assets/images/works/hqtec.png";
 import party from "../assets/images/works/party.png";
 import rock from "../assets/images/works/rock.png";
+import panImg from "../assets/images/works/panImg.png";
 import accessplus from "../assets/images/works/acccessplus.jpeg";
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
 
@@ -18,9 +19,15 @@ function Work() {
     },
     {
       name: "TMSaaS",
-      desc: "TM SAAS is a collection of API’s. The platform serves as the interface for developers /businesses to access array of API’s for their development & business’s needs. Available API’s include: Payment, notification, Authentication API’s etc.",
+      desc: "TM SAAS is a collection of API's. The platform serves as the interface for developers /businesses to access array of API’s for their development & business’s needs. Available API’s include: Payment, notification, Authentication API’s etc.",
       image: Tmsaas,
       link: "https://saas.tm30.net/",
+    },
+    {
+      name: "Pan African Towers",
+      desc: "",
+      image: panImg,
+      link: "https://www.panafricantowers.com/",
     },
     {
       name: "Secure Enterprise Aggregator Platform (SEAP)",
